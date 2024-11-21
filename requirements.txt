@@ -1,0 +1,6 @@
+Flask
+gradio
+tensorflow
+Pillow
+numpy
+requests
