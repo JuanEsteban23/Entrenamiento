@@ -3,9 +3,10 @@ from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing.image import img_to_array
 from PIL import Image
 import numpy as np
+import os
 
-# Ruta al archivo del modelo (.keras)
-model_path = r'C:\Users\usuario\Documents\Trabajos U\Semestre 9\Electiva III\Entrenamiento 1 Recortado\best_model.keras'
+# Ruta relativa al archivo del modelo
+model_path = os.path.join(os.path.dirname(__file__), 'models', 'best_model.keras')
 
 # Cargar el modelo
 model = load_model(model_path)
